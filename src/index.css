@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+
+@layer components {
+  /* PRIMARY COLORS */
+  .text-primary {
+  @apply text-[#006837];
+}
+
+  .text-secondary {
+    @apply text-[#f4f4f4];
+  }
+
+  .bg-secondary {
+    @apply bg-[#f4f4f4];
+  }
+
+  .text-button {
+    @apply text-[#00a650];
+  }
+
+  .bg-textbutton {
+    @apply bg-[#00a650];
+  }
+
+  .bg-text-button {
+    @apply bg-[#00a650];
+  }
+
+  .hover\\:bg-text-button:hover {
+    @apply bg-[#00a650];
+  }
+
+  .bg-primary {
+    @apply bg-[#006837];
+  }
+  .bg-button {
+    @apply bg-[#00a650];
+  }
+
+  .hover\\:bg-primary:hover {
+    @apply bg-[#f4f4f4];
+  }
+  .hover\\:text-primary:hover {
+    @apply bg-[#006837];
+  }
+}
+@media (max-width: 950px) {
+#nav{
+    display: none;
+}
+
+}
+
+@media (max-width: 550px) {
+#input{
+    display: none;
+}
+
+  #nav {
+    display: none;
+  }
+  #nav.active {
+    display: block;
+  }
+  #bars {
+    display: block;
+    cursor: pointer;
+  }
+
+#header{
+  padding: 5px ;
+}
+
+}
+
+@media (max-width: 1280px){
+  #bars{
+    display: none;
+  }
+}
+
+/* Show hamburger button on screen widths 1280px and below */
+@media (max-width: 1280px) {
+  #bars {
+    display: block !important;
+  }
+  #nav {
+    display: none;
+  }
+  #nav.active {
+    display: block;
+  }
+}
+
+/* Hide hamburger button on larger screens */
+@media (min-width: 1281px) {
+  #bars {
+    display: none !important;
+  }
+  #nav {
+    display: flex !important;
+  }
+}

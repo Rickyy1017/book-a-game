@@ -1,0 +1,65 @@
+@media (max-width: 768px) {
+  .background-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 139, 0.5);
+  }
+
+ 
+  
+}
+
+@media (min-width: 767px) {
+  .background-overlay {
+    background-color: transparent;
+  }
+}
+
+@media (max-width: 1508px) {
+  #feel {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 1280px) {
+  #welcome {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 15px;
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin: 0 auto; /* centers the div horizontally */
+  }
+  #soccer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #player {
+    
+    font-size: 13px;
+   
+  }
+  #soccer-p {
+    width: 100%;
+    font-size: 13px;
+  }
+
+  #feel {
+    font-size: 2.5rem;
+  }
+  #next-match {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width :375px) {
+   #feel {
+    font-size: 1.5rem;
+  }
+
+  #next-match{
+    padding: 5px ;
+  }
+
+}
